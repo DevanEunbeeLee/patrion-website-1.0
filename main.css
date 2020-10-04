@@ -1,0 +1,526 @@
+
+
+/* 모바일용 내비게이션 만들기 (burger button) 
+    font 재정비 
+*/
+
+
+
+
+
+/* common */
+
+body {
+    font-family: 'Roboto', cursive;
+    background-color: black;
+}
+h1 {
+    color: white;
+    font-size: 40pt;
+}
+.line {
+    width: 100%;
+    border-top: white 1px solid;
+    opacity: 20%;
+}
+.empty-space {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+/* header */
+
+.nav-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    width: 30%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    width: 70%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul li {
+    display: inline;
+    color: white;
+    font-size: 25pt;
+    padding: 10pt;
+    margin: 1em;
+}
+
+/* section1 */
+
+.section1-container {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.section1-container p {
+    text-align: center;
+}    
+.overlay-text {
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    font-size: 33pt;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section2 */
+
+.section2-container1 {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18pt;
+    line-height: 50pt;
+    text-align: center;
+}
+.section2-container2 {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18pt;
+    line-height: 50pt;
+    text-align: center;
+    text-decoration: underline;
+}
+.section2-container3 {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    font-size: 18pt;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section2-container4 {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30pt;
+}
+.section2-container5 {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18pt;
+    line-height: 50pt;
+    text-align: center;
+    text-decoration: underline;
+}
+.detail-button {
+    font-size: 15pt;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section2-last-empty-space {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+#section2-last-line {
+    width: 100%;
+    border-top: white 1px solid;
+    opacity: 20%;
+}
+#section3-first-empty-space {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+#contact-h1-box {
+    width: 40%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.contact-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    color: white;
+    font-size: 16pt;
+    
+}
+input {
+    width: 200px;
+    height: 50px;
+    font-size: 16pt;
+}
+textarea {
+    width: 650px;
+    font-size: 16pt;
+}
+.send-button {
+    font-size: 18pt;
+    background-color: gainsboro;
+    padding: 10px 20px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+
+.copyright-box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14pt;
+}
+.address-box {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 17pt;
+    text-align: center;
+    line-height: 30pt;
+}
+address > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 1650px */
+
+@media screen and (max-width: 1650px) {
+    .menu ul li {
+       color: white;
+       font-size: 15pt;
+    }
+}
+
+/* iPad 768x1024 */
+
+@media screen and (max-width: 768px) {
+    .menu ul li {
+       color: white;
+       font-size: 10pt;
+    }
+}
+
+/* Android 7.0 360x740 */
+
+@media screen and (max-width: 360px) {
+    h1 {
+        color: white;
+        font-size: 26pt;
+    }
+    .empty-space {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+    .menu ul li {
+       display: none;
+    }
+    .logo {
+        width: 80%;
+        margin-left: 20px;
+        height: 200px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .overlay-text {
+        width: 100%;
+        height: 500px;
+        background-color: transparent;
+        font-size: 31pt;
+        color: white;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1-container {
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .section2-container1 {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 10pt;
+        line-height: 20pt;
+        text-align: center;
+    }
+    .section2-container2 {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 10pt;
+        line-height: 20pt;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .section2-container3 {
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        color: white;
+        font-size: 11pt;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section2-container4 {
+        width: 100%;
+        height: 100px;
+        color: white;
+        font-size: 10pt;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 20pt;
+        margin-top: 10px;
+    }
+    .section2-container5 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18pt;
+        line-height: 50pt;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .detail-button {
+        font-size: 11pt;
+        background-color: whitesmoke;
+        border-radius: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section3-first-empty-space {
+        display: none;
+    }
+    #section2-last-line {
+        display: none;
+    }
+    #contact-h1-box {
+        display: none;
+    }
+    .contact-form {
+        display: none;
+    }
+    .address-box {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 13pt;
+        text-align: center;
+        line-height: 30pt;
+    }
+}
+
+/* iphone6 375x667 */
+
+@media screen and (max-width: 375px) {
+    h1 {
+        color: white;
+        font-size: 26pt;
+    }
+    .empty-space {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+    .menu ul li {
+       display: none;
+    }
+    .logo {
+        width: 80%;
+        margin-left: 20px;
+        height: 200px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .overlay-text {
+        width: 100%;
+        height: 500px;
+        background-color: transparent;
+        font-size: 31pt;
+        color: white;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1-container {
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .section2-container1 {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 10pt;
+        line-height: 20pt;
+        text-align: center;
+    }
+    .section2-container2 {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 10pt;
+        line-height: 20pt;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .section2-container3 {
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        color: white;
+        font-size: 11pt;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section2-container4 {
+        width: 100%;
+        height: 100px;
+        color: white;
+        font-size: 10pt;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 20pt;
+        margin-top: 10px;
+    }
+    .section2-container5 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18pt;
+        line-height: 50pt;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .detail-button {
+        font-size: 11pt;
+        background-color: whitesmoke;
+        border-radius: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section3-first-empty-space {
+        display: none;
+    }
+    #section2-last-line {
+        display: none;
+    }
+    #contact-h1-box {
+        display: none;
+    }
+    .contact-form {
+        display: none;
+    }
+    .address-box {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 12pt;
+        text-align: center;
+        line-height: 30pt;
+    }
+}
