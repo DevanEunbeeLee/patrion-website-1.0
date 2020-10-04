@@ -47,7 +47,6 @@ h1 {
 .menu {
     width: 70%;
     height: 200px;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +57,14 @@ h1 {
     font-size: 25pt;
     padding: 10pt;
     margin: 1em;
+}
+.menu ul li a {
+    display: inline;
+    color: white;
+    font-size: 25pt;
+    padding: 10pt;
+    margin: 1em;
+    text-decoration: none;
 }
 
 /* section1 */
@@ -250,6 +257,9 @@ address > a {
     .menu ul li {
        color: white;
        font-size: 10pt;
+    }
+    .title-box-large > h1 {
+        font-size: 30pt;
     }
 }
 

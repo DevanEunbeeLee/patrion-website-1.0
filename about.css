@@ -1,0 +1,137 @@
+.title-box-large {
+    width: 40%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.white-container {
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 3%;
+    font-size: 20pt;
+    line-height: 40pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    padding: 3%;
+}
+.img-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-item {
+    width: 400px;
+    display: inline;
+}
+.img-item > img {
+    width: 350px;
+    height: 227px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.title-box {
+    color: white;
+    font-size: 22pt;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title-item {
+    width: 400px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: rebeccapurple;
+}
+.list-box {
+    color: white;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-item ul li {
+    width: 400px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-size: 20pt;
+    margin-top: 20px;
+    text-align: left;
+}
+.title-box-2 {
+    color: white;
+    font-size: 22pt;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title-item-2 {
+    width: 400px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: yellowgreen;
+    font-size: 30pt;
+}
+#CEO {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30pt;
+    background-color: tomato;
+    margin-left: 42vw;
+    margin-bottom: 20px;
+}
+.title-box-3 {
+    color: white;
+    font-size: 22pt;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title-item-3 {
+    width: 400px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: orange;
+    font-size: 26pt;
+}
+.list-item-3 {
+    width: 400px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 22pt;
+    text-align: center;
+}
+.google-map {
+    width: 100%;
+    height: 400px;
+    background-color: ivory;
+    border: gray 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
