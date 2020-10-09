@@ -1,0 +1,30 @@
+.picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.picture-container figcaption {
+    font-size: 23pt;
+    color: white;
+    text-align: center;
+}
+.title-box-medium {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 40%;
+    line-height: 30pt;
+    background-color: sandybrown;
+}
+.picture-container2 {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 80%;
+}
+.picture-container2 figcaption {
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+}

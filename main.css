@@ -18,6 +18,10 @@ h1 {
     color: white;
     font-size: 40pt;
 }
+h2 {
+    color: white;
+    font-size: 20pt;
+}
 .line {
     width: 100%;
     border-top: white 1px solid;
