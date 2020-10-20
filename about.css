@@ -4,6 +4,12 @@
     align-items: right;
     justify-content: right;
 }
+.title-box-large-location {
+    width: 40%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
 .white-container {
     background-color: whitesmoke;
     width: 50%;
@@ -128,10 +134,228 @@
 }
 .google-map {
     width: 100%;
-    height: 400px;
-    background-color: ivory;
-    border: gray 3px solid;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.google-map > img {
+    width: 48%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Macbook 13' 1440px */
+
+/* 1024x768px */
+
+@media screen and (max-width: 1024px) {
+    .img-box {
+        width: 1024px;
+    }
+    .img-box img {
+        width: 250px;
+        height: 200px;
+    }
+    .list-box {
+        width: 1024px;
+    }
+    .title-item {
+        font-size: 22px !important;
+    }
+    .list-item ul li {
+        width: 250px;
+        font-size: 19px !important;
+    }
+    .list-item-3 {
+        font-size: 19px;
+    }
+    .google-map img {
+        width: 800px;
+        height: 400px;
+    }
+}
+
+/* iPad 768x1024px */
+
+@media screen and (max-width: 768px) {
+    .white-container {
+        font-size: 17px;
+        line-height: 19pt;
+    }
+    .img-box {
+        width: 768px;
+    }
+    .img-box img {
+        width: 190px;
+        height: 160px;
+    }
+    .list-box {
+        width: 768px;
+    }
+    .title-item {
+        font-size: 22px !important;
+    }
+    .list-item ul li {
+        width: 190px;
+        font-size: 14px !important;
+        justify-content: center;
+    }
+    .title-item-3 span {
+        font-size: 20px;
+    }
+    .title-box-2 span {
+        width: 190px;
+    }
+    .list-item-3 {
+        font-size: 17px;
+    }
+    .google-map img {
+        width: 768px;
+        height: 400px;
+    }
+}
+
+/* Android 7.0 360x740 */
+
+@media screen and (max-width: 360px) {
+    body {
+        margin-left: 10px;
+    }
+    .white-container {
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 0;
+    }
+    .title-box-large {
+        width: 150px;
+    }
+    .title-box-large h1 {
+        font-size: 20px;
+    }
+    .img-box {
+        width: 768px;
+    }
+    .img-box img {
+        display: none;       
+    }
+    .list-box {
+        width: 768px;
+    }
+    .title-item {
+        font-size: 18px !important;
+    }
+    .list-item ul li {
+        width: 190px;
+        font-size: 14px !important;
+        justify-content: center;
+        display: none;
+    }
+    .title-item-2 span {
+        font-size: 18px;
+    }
+    .title-item-3 span {
+        font-size: 13px;
+        line-height: 10pt;
+    }
+    .list-box {
+        display: none;
+    }
+    .title-box-2 span {
+        width: 190px;
+    }
+    .list-item-3 {
+        font-size: 17px;
+    }
+    #CEO {
+        font-size: 20px;
+    }
+    .google-map {
+        display: none;
+    }
+    .google-map img {
+        display: none;
+    }
+    .title-box-large-location span {
+        background-color: salmon;
+        display: none;
+    }
+    .empty-space {
+        width: 100%;
+        height: 30px !important;
+    }
+}
+
+/* iphone6 375x667 */
+
+@media screen and (max-width: 375px) {
+    body {
+        margin-left: 10px;
+    }
+    .white-container {
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 0;
+    }
+    .title-box-large {
+        width: 150px;
+    }
+    .title-box-large h1 {
+        font-size: 20px;
+    }
+    .img-box {
+        width: 768px;
+    }
+    .img-box img {
+        display: none;       
+    }
+    .list-box {
+        width: 768px;
+    }
+    .title-item {
+        font-size: 18px !important;
+    }
+    .list-item ul li {
+        width: 190px;
+        font-size: 14px !important;
+        justify-content: center;
+        display: none;
+    }
+    .title-item-2 span {
+        font-size: 18px;
+    }
+    .title-item-3 span {
+        font-size: 13px;
+        line-height: 10pt;
+    }
+    .list-box {
+        display: none;
+    }
+    .title-box-2 span {
+        width: 190px;
+    }
+    .list-item-3 {
+        font-size: 17px;
+    }
+    #CEO {
+        font-size: 20px;
+    }
+    .google-map {
+        display: none;
+    }
+    .google-map img {
+        display: none;
+    }
+    .title-box-large-location span {
+        background-color: salmon;
+        display: none;
+    }
+    .empty-space {
+        width: 100%;
+        height: 30px !important;
+    }
 }

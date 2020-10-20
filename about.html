@@ -183,12 +183,13 @@
     </section>
     <section>
         <div class="empty-space"></div>
-        <div class="title-box-large">
-            <h1>찾아오시는 길<br>Location</h1>
+        <div class="title-box-large-location">
+            <span><h1>찾아오시는 길<br>Location</h1></span>
         </div>
         <div class="empty-space"></div>
         <div class="google-map">
-            location <!--구글 맵 API 연동-->
+            <!--구글 맵 API 연동-->
+            <img src="img/map.jpg" alt="map">
         </div>
         <div class="empty-space"></div>
     </section>
@@ -209,5 +210,27 @@
         </div>
         <div class="empty-space"></div> 
     </footer>
+    <script>
+        function initMap() {
+            const myLatLng = {
+                lat: 37.486671,
+                lng: 127.121708
+            }
+            const map = new google.maps.Map(
+                document.getElementById('google-map'),
+                {
+                    center: myLatLng,
+                    scrollwheel: false,
+                    zoom: 18
+                }
+            );
+            const marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Patrion'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd7MG-H1xXs0B0X580CIoxue-WmSRdKNg&callback=initMap" async defer></script>
 </body>
 </html>
