@@ -22,6 +22,21 @@
     margin-left: 30%;
     padding: 3%;
 }
+.white-container-mobile {
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 3%;
+    font-size: 20pt;
+    line-height: 40pt;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    padding: 3%;
+}
+.black-container-mobile {
+    display: none;
+}
 .img-box {
     width: 100%;
     display: flex;
@@ -218,9 +233,9 @@
     }
 }
 
-/* Android 7.0 360x740 */
+/* iphone XS 414x896 */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 414px) {
     body {
         margin-left: 10px;
     }
@@ -229,6 +244,26 @@
         line-height: 19pt;
         width: 320px;
         margin: 0;
+    }
+    .white-container-mobile {
+        display: block;
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 0;
+        background-color: white;
+        border-radius: 14%;
+        align-items: center;
+    }
+    .black-container-mobile {
+        display: block;
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 20px;
+        color: whitesmoke;
+        border-radius: 14%;
+        align-items: center;
     }
     .title-box-large {
         width: 150px;
@@ -247,6 +282,99 @@
     }
     .title-item {
         font-size: 18px !important;
+        display: none;
+    }
+    .list-item ul li {
+        width: 190px;
+        font-size: 14px !important;
+        justify-content: center;
+        display: none;
+    }
+    .title-item-2 span {
+        font-size: 18px;
+    }
+    .title-item-3 span {
+        font-size: 13px;
+        line-height: 10pt;
+    }
+    .list-box {
+        display: none;
+    }
+    .title-box-2 span {
+        width: 190px;
+    }
+    .list-item-3 {
+        font-size: 17px;
+    }
+    #CEO {
+        font-size: 20px;
+    }
+    .google-map {
+        display: none;
+    }
+    .google-map img {
+        display: none;
+    }
+    .title-box-large-location span {
+        background-color: salmon;
+        display: none;
+    }
+    .empty-space {
+        width: 100%;
+        height: 30px !important;
+    }
+}
+
+/* Galaxy S9 360x740 */
+
+@media screen and (max-width: 360px) {
+    body {
+        margin-left: 10px;
+    }
+    .white-container {
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 0;
+    }
+    .white-container-mobile {
+        display: block;
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 0;
+        background-color: white;
+        border-radius: 14%;
+        align-items: center;
+    }
+    .black-container-mobile {
+        display: block;
+        font-size: 17px;
+        line-height: 19pt;
+        width: 320px;
+        margin: 20px;
+        color: whitesmoke;
+        border-radius: 14%;
+        align-items: center;
+    }
+    .title-box-large {
+        width: 150px;
+    }
+    .title-box-large h1 {
+        font-size: 20px;
+    }
+    .img-box {
+        width: 768px;
+    }
+    .img-box img {
+        display: none;       
+    }
+    .list-box {
+        width: 768px;
+    }
+    .title-item {
+        font-size: 18px !important;
+        display: none;
     }
     .list-item ul li {
         width: 190px;
