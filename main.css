@@ -1,17 +1,14 @@
 
 
-/* 모바일용 내비게이션 만들기 (burger button) 
+/* 
     font 재정비 
 */
-
-
-
 
 
 /* common */
 
 body {
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto', monospace;
     background-color: black;
 }
 h1 {
@@ -47,7 +44,7 @@ h2 {
     flex-direction: row;
 }
 .logo {
-    width: 30%;
+    width: 20%;
     height: 200px;
     background-color: black;
     display: flex;
@@ -60,13 +57,16 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+}
+.menu ul {
 }
 .menu ul li {
     display: inline;
     color: white;
-    font-size: 25pt;
-    padding: 10pt;
-    margin: 1em;
+    font-size: 18pt;
+    padding: 0pt;
+    white-space: nowrap;
 }
 .menu ul li a {
     display: inline;
@@ -75,6 +75,7 @@ h2 {
     padding: 10pt;
     margin: 1em;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 /* section1 */
@@ -189,11 +190,19 @@ h2 {
     height: 100px;
     background-color: black;
 }
-#contact-h1-box {
-    width: 40%;
-    display: flex;
+#contact-h1-box {   
+    margin-left: 35vw;
+    display: inline-block;
     align-items: right;
     justify-content: right;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){ 
+    #contact-h1-box {  
+    margin-left: 35vw;
+    display: inline-block;
+    align-items: right;
+    justify-content: right;
+    }
 }
 .contact-form {
     width: 100%;
@@ -713,6 +722,9 @@ address > a {
         align-items: center;
         justify-content: center;
         position: relative;
+    }
+    .section1-container > video {
+        width: 100vw;
     }
     .section2-container1 {
         width: 100%;
