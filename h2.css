@@ -29,7 +29,25 @@
     color: white;
     text-align: center;
 }
-
+.white-container #pilot2 {
+    width: fit-content;
+}
+.black-container figcaption {
+    margin-left: 3vw;
+    color: whitesmoke;
+}
+.black-container {
+    background-color: black;
+    width: 50%;
+    border-radius: 3%;
+    font-size: 20pt;
+    line-height: 40pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    padding: 3%;
+}
 
 /* Macbook 13' 1440px */
 
@@ -133,6 +151,110 @@
     }
 }
 
+/* iPhone6/7/8 375px */
+
+@media screen and (max-width: 375px) {
+
+    .title-box-large > h1 {
+        font-size: 15pt;
+        display: inline;
+        width: 1000px;
+        margin-left: 20px;
+    }
+    .title-box-medium {
+        margin-top: 15px;
+    }
+    .title-box-medium > h2 {
+        font-size: 10pt;
+        line-height: 20px;
+    }
+    figure > img {
+        width: 330px;
+    }
+    .picture-container > figure > figcaption {
+        font-size: 15px;
+        line-height: 2px;
+    }
+    .black-container > figure > img {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+    }
+    .black-container figcaption {
+        font-size: 8pt;
+        margin-left: 0px;
+        line-height: 10pt;
+        margin-top: -100px;
+    }
+    .black-container > iframe {
+        width: 350px !important;
+        height: 300px !important;
+        margin-left: 0;
+    }
+    .black-container {
+        height: fit-content;
+    }
+    .picture-container > img {
+        width: 300px !important;
+    }
+    .black-container {
+        margin-left: 20vw;
+        height: 300px;
+    }
+}
+
+/* iPhone6/7/8 375px Firefox*/
+
+@media screen and (-moz-max-width: 375px) {
+
+    .title-box-large > h1 {
+        font-size: 15pt;
+        display: inline;
+        width: 1000px;
+        margin-left: 20px;
+    }
+    .title-box-medium {
+        margin-top: 15px;
+    }
+    .title-box-medium > h2 {
+        font-size: 10pt;
+        line-height: 20px;
+    }
+    figure > img {
+        width: 330px;
+    }
+    .picture-container > figure > figcaption {
+        font-size: 15px;
+        line-height: 2px;
+    }
+    .black-container > figure > img {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+    }
+    .black-container figcaption {
+        font-size: 8pt;
+        margin-left: 0px;
+        line-height: 10pt;
+        margin-top: -100px;
+    }
+    .black-container > iframe {
+        width: 350px !important;
+        height: 300px !important;
+        margin-left: 0;
+    }
+    .black-container {
+        height: fit-content;
+    }
+    .picture-container > img {
+        width: 300px !important;
+    }
+    .black-container {
+        margin-left: 20vw;
+        height: 300px;
+    }
+}
+
 /* galaxy S9 360px */
 
 @media screen and (max-width: 360px) {
@@ -156,15 +278,15 @@
     .picture-container > figure > figcaption {
         font-size: 15px;
     }
-    .picture-container2 > figure > img {
+    .black-container > figure > img {
         width: 300px;
         margin-left: 380px;
     }
-    .picture-container2 > figure > figcaption {
+    .black-container > figure > figcaption {
         font-size: 12pt;
         margin-left: 450px;
     }
-    .picture-container2 > iframe {
+    .black-container > iframe {
         width: 450px;
         align-items: left;
         justify-content: left;
