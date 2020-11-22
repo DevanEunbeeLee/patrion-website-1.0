@@ -17,6 +17,9 @@
     line-height: 30pt;
     background-color: sandybrown;
 }
+.title-box-large > h1 {
+    margin-left: 40px;
+}
 .picture-container2 {
     display: flex;
     align-items: center;
@@ -24,17 +27,27 @@
     width: 80%;
     margin-left: 10vw;
 }
+.picture-container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 .picture-container2 figcaption {
     font-size: 20pt;
     color: white;
     text-align: center;
 }
-.white-container #pilot2 {
-    width: fit-content;
+.black-container #pilot2 {
+    width: 800px;
 }
 .black-container figcaption {
     margin-left: 3vw;
     color: whitesmoke;
+}
+.black-container iframe {
+    width: 800px;
+    height: 500px;
 }
 .black-container {
     background-color: black;
@@ -47,6 +60,9 @@
     justify-content: center;
     margin-left: 30%;
     padding: 3%;
+}
+.picture-container3 > img {
+    width: 1024px;
 }
 
 /* Macbook 13' 1440px */
@@ -88,6 +104,9 @@
 
 @media screen and (max-width: 768px) {
 
+    body {
+        margin-left: 5px;
+    }
     .title-box-large > h1 {
         font-size: 19pt;
         display: inline;
@@ -109,6 +128,9 @@
         width: 750px;
         margin-left: 100px;
         align-items: center;
+    }
+    .picture-container3 img {
+        width: 750px;
     }
 }
 
@@ -180,6 +202,11 @@
         height: 300px;
         margin-left: 0;
     }
+    .black-container #pilot2 {
+        width: 300px;
+        height: 300px;
+        behavior: url(PIE.htc);
+    }
     .black-container figcaption {
         font-size: 8pt;
         margin-left: 0px;
@@ -194,18 +221,39 @@
     .black-container {
         height: fit-content;
     }
-    .picture-container > img {
+    .picture-container img {
         width: 300px !important;
     }
     .black-container {
         margin-left: 20vw;
         height: 300px;
     }
+    .picture-container3 img {
+        width: 300px;
+        object-fit: cover;
+        -moz-width: 300px;
+        -webkit-width: 300px;
+        -ms-width: 300px;
+        -o-width: 300px;
+        /* behavior: url(PIE.htc); */
+    }
 }
+
+/* iPhone6/7/8 667px(가로로) */
+
+@media screen and (max-width: 667px) {
+
+.black-container > figure > img {
+    width: 300px;
+    behavior: url(PIE.htc);
+    }
+
+}
+
 
 /* iPhone6/7/8 375px Firefox*/
 
-@media screen and (-moz-max-width: 375px) {
+/* @media screen and (-moz-max-width: 375px) {
 
     .title-box-large > h1 {
         font-size: 15pt;
@@ -239,21 +287,29 @@
         margin-top: -100px;
     }
     .black-container > iframe {
-        width: 350px !important;
-        height: 300px !important;
+        width: 350px;
+        height: 300px;
         margin-left: 0;
     }
     .black-container {
         height: fit-content;
     }
     .picture-container > img {
-        width: 300px !important;
+        width: 300px;
     }
     .black-container {
         margin-left: 20vw;
         height: 300px;
     }
-}
+    .picture-container3 img {
+        width: 370px;
+        height: 420px;
+    }
+    .black-container #pilot2 {
+        width: 300px;
+        height: 300px;
+    }
+} */
 
 /* galaxy S9 360px */
 
