@@ -245,6 +245,15 @@
             <!-- <img src="img/map.jpg" alt="map">
         </div> -->
         <div class="empty-space"></div>
+        <div class="title-box-large">
+            <h1>찾아오시는 길<br>Location</h1>
+        </div>
+        <div class="map-container">
+            <div id="map">
+                Google Maps
+            </div>
+        </div>
+        <div class="empty-space"></div>
     </section> 
     <div class="line"></div>
     <footer>
@@ -264,15 +273,15 @@
         <div class="empty-space"></div> 
     </footer>
     <script>
-        function initMap() {
+        function initMap(){
             const myLatLng = {
-                lat: 37.486671,
-                lng: 127.121708
+                lat: 37.48651962751546,
+                lng: 127.12194918352382
             }
             const map = new google.maps.Map(
-                document.getElementById('google-map'),
+                document.getElementById('map'),
                 {
-                    center: myLatLng,
+                    center: myLatLng, 
                     scrollwheel: false,
                     zoom: 18
                 }
@@ -284,6 +293,6 @@
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd7MG-H1xXs0B0X580CIoxue-WmSRdKNg&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzSjOJOrX5nmqwTN9Mqf5HQ721lISNBP0&callback=initMap" async defer></script>
 </body>
 </html>

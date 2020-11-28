@@ -161,7 +161,20 @@
     align-items: center;
     justify-content: center;
 }
-
+.map-container {
+    width: 100%;
+    height: 700px;
+}
+#map {
+    width: 50%;
+    height: 80%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+    margin-top: 10vw;
+}
 /* Macbook 13' 1440px */
 
 /* 1024x768px */
