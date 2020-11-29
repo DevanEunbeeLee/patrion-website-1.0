@@ -84,7 +84,7 @@
     
 }
 
-/* ipad 1024px */
+/* ipad 1024px 가로모드 */
 
 @media screen and (max-width: 1024px) {
 
@@ -100,7 +100,7 @@
 }
 
 
-/* ipad 768px */
+/* ipad 768px 세로모드 */
 
 @media screen and (max-width: 768px) {
 
@@ -136,7 +136,7 @@
 
 /* iphone XS 414px */
 
-@media screen and (max-width: 414px) {
+/* @media screen and (max-width: 414px) {
 
     .title-box-large > h1 {
         font-size: 15pt;
@@ -171,9 +171,51 @@
         justify-content: left;
         margin-right: 30px;
     }
+} */
+
+/* iPhone6 375x667 가로모드 */
+
+@media screen and (max-width: 667px) {
+
+    body {
+        margin-left: 5px;
+    }
+    .title-box-large > h1 {
+        font-size: 15pt;
+        display: inline;
+        width: 1000px;
+        margin-left: 20px;
+    }
+    .title-box-medium > h2 {
+        font-size: 11pt;
+        line-height: 20px;
+    }
+    figure > img {
+        width: 600px;
+    }
+    .black-container > figure > #pilot2 {
+        width: 70vw;
+        height: 60vw;
+    }
+    .picture-container2 > figure > img {
+        width: 500px;
+        margin-left: 380px;
+    }
+    .black-container > figure > figcaption {
+        font-size: 12pt;
+        margin-left: 450px;
+        display: none;
+    }
+    .black-container > iframe {
+        width: 70vw;
+        height: 50vw;
+    }
+    .picture-container3 img {
+        width: 90vw;
+    }
 }
 
-/* iPhone6/7/8 375px */
+/* iPhone6 375x667 세로모드 */
 
 @media screen and (max-width: 375px) {
 
@@ -236,116 +278,5 @@
         -ms-width: 300px;
         -o-width: 300px;
         /* behavior: url(PIE.htc); */
-    }
-}
-
-/* iPhone6/7/8 667px(가로로) */
-
-@media screen and (max-width: 667px) {
-
-.black-container > figure > img {
-    width: 300px;
-    behavior: url(PIE.htc);
-    }
-
-}
-
-
-/* iPhone6/7/8 375px Firefox*/
-
-/* @media screen and (-moz-max-width: 375px) {
-
-    .title-box-large > h1 {
-        font-size: 15pt;
-        display: inline;
-        width: 1000px;
-        margin-left: 20px;
-    }
-    .title-box-medium {
-        margin-top: 15px;
-    }
-    .title-box-medium > h2 {
-        font-size: 10pt;
-        line-height: 20px;
-    }
-    figure > img {
-        width: 330px;
-    }
-    .picture-container > figure > figcaption {
-        font-size: 15px;
-        line-height: 2px;
-    }
-    .black-container > figure > img {
-        width: 300px;
-        height: 300px;
-        margin-left: 0;
-    }
-    .black-container figcaption {
-        font-size: 8pt;
-        margin-left: 0px;
-        line-height: 10pt;
-        margin-top: -100px;
-    }
-    .black-container > iframe {
-        width: 350px;
-        height: 300px;
-        margin-left: 0;
-    }
-    .black-container {
-        height: fit-content;
-    }
-    .picture-container > img {
-        width: 300px;
-    }
-    .black-container {
-        margin-left: 20vw;
-        height: 300px;
-    }
-    .picture-container3 img {
-        width: 370px;
-        height: 420px;
-    }
-    .black-container #pilot2 {
-        width: 300px;
-        height: 300px;
-    }
-} */
-
-/* galaxy S9 360px */
-
-@media screen and (max-width: 360px) {
-
-    .title-box-large > h1 {
-        font-size: 15pt;
-        display: inline;
-        width: 1000px;
-        margin-left: 20px;
-    }
-    .title-box-medium {
-        margin-top: 15px;
-    }
-    .title-box-medium > h2 {
-        font-size: 10pt;
-        line-height: 20px;
-    }
-    figure > img {
-        width: 330px;
-    }
-    .picture-container > figure > figcaption {
-        font-size: 15px;
-    }
-    .black-container > figure > img {
-        width: 300px;
-        margin-left: 380px;
-    }
-    .black-container > figure > figcaption {
-        font-size: 12pt;
-        margin-left: 450px;
-    }
-    .black-container > iframe {
-        width: 450px;
-        align-items: left;
-        justify-content: left;
-        margin-right: 16px;
     }
 }

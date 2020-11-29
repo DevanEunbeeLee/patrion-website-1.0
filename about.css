@@ -147,7 +147,7 @@
     font-size: 22pt;
     text-align: center;
 }
-.google-map {
+/* .google-map {
     width: 100%;
     height: 550px;
     display: flex;
@@ -160,7 +160,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 .map-container {
     width: 100%;
     height: 700px;
@@ -338,11 +338,11 @@
     }
 }
 
-/* Galaxy S9 360x740 */
+/* iphone6 375x667 가로모드 */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 667px) {
     body {
-        margin-left: 10px;
+        margin-left: 30px;
     }
     .white-container {
         font-size: 17px;
@@ -414,12 +414,6 @@
     #CEO {
         font-size: 20px;
     }
-    .google-map {
-        display: none;
-    }
-    .google-map img {
-        display: none;
-    }
     .title-box-large-location span {
         background-color: salmon;
         display: none;
@@ -428,9 +422,20 @@
         width: 100%;
         height: 30px !important;
     }
+    .map-container {
+        max-width: 90vw;;
+        height: 300px;
+    }
+    #map {
+        width: 90vw;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-/* iphone6 375x667 */
+/* iphone6 375x667 세로모드 */
 
 @media screen and (max-width: 375px) {
     body {
@@ -485,12 +490,6 @@
     #CEO {
         font-size: 20px;
     }
-    .google-map {
-        display: none;
-    }
-    .google-map img {
-        display: none;
-    }
     .title-box-large-location span {
         background-color: salmon;
         display: none;
@@ -499,4 +498,16 @@
         width: 100%;
         height: 30px !important;
     }
+    .map-container {
+        max-width: 90vw;;
+        height: 300px;
+    }
+    #map {
+        width: 90vw;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+

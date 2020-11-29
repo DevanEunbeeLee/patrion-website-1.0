@@ -1,7 +1,7 @@
 
 
 /* 
-    font 재정비 
+    font 재정비 for Windows 
 */
 
 
@@ -410,7 +410,7 @@ address > a {
 
 /* iphone XS 414x896 */
 
-@media screen and (max-width: 414px) {
+/* @media screen and (max-width: 414px) {
     h1 {
         color: white;
         font-size: 26pt;
@@ -548,7 +548,7 @@ address > a {
         opacity: 20%;
         display: flex;
     }
-}
+} */
 
 /* Android 7.0 360x740 */
 
@@ -567,7 +567,7 @@ address > a {
     }
     .logo {
         width: 80%;
-        margin-left: 20px;
+        margin-left: 40px;
         height: 200px;
         background-color: black;
         display: flex;
@@ -686,7 +686,7 @@ address > a {
     }
 }
 
-/* iphone6 375x667 */
+/* iphone6 375x667 세로모드 */
 
 @media screen and (max-width: 375px) {
     h1 {
@@ -847,11 +847,13 @@ address > a {
     .logo {
         width: 30%;
         height: 200px;
-        background-color: black;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 20px;
+        margin-left: 60px;
+    }
+    .section1-container{
+        max-height: fit-content;
     }
     .section1-container video {
         width: 100vw;
